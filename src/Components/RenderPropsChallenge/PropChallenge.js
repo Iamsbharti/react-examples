@@ -1,20 +1,21 @@
 import React from "react";
-import DataFetch from "./DataFetch";
+import FetchFunctionl from "./FetchFunctional";
 
-function RenderPropChallangeApp(props) {
+function PropChallange() {
   return (
     <div>
-      <h1>{props.title}</h1>
-      <DataFetch>
-        {({ loading, data }) => {
+      <FetchFunctionl
+        render={({ loading, data }) => {
+          console.log(loading);
           return loading ? (
             <h1>API is Loading..</h1>
           ) : (
             <p>{JSON.stringify(data)}</p>
           );
         }}
-      </DataFetch>
+      />
     </div>
   );
 }
-export default RenderPropChallangeApp;
+
+export default PropChallange;

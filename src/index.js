@@ -8,6 +8,7 @@ import ReactDOM from "react-dom";
 //import ToggleHOCApp from "../src/Components/ToggleEg-WithHOC/ToggleHOCApp";
 //import RenderPropsApp from "../src/Components/RenderPropsEg/RenderPropsApp";
 import RenderPropChallangeApp from "../src/Components/RenderPropsChallenge/RenderPropChallengeApp";
+//import PropChallange from "../src/Components/RenderPropsChallenge/PropChallenge";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -35,4 +36,8 @@ const rootElement = document.getElementById("root");
 /**
  * Render RenderPropChallangeApp App.
  */
-ReactDOM.render(<RenderPropChallangeApp />, rootElement);
+ReactDOM.render(
+  <RenderPropChallangeApp title={"RenerProps using children"} />,
+  rootElement
+);
+//ReactDOM.render(<PropChallange />, rootElement);
