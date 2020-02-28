@@ -6,7 +6,8 @@ import ReactDOM from "react-dom";
 //import HocApp from "../src/Components/HOC/HocApp";
 //import ToggleNoHocApp from "../src/Components/ToggleEg-NonHOC/ToggleNoHocApp";
 //import ToggleHOCApp from "../src/Components/ToggleEg-WithHOC/ToggleHOCApp";
-import RenderPropsApp from "../src/Components/RenderPropsEg/RenderPropsApp";
+//import RenderPropsApp from "../src/Components/RenderPropsEg/RenderPropsApp";
+import RenderPropChallangeApp from "../src/Components/RenderPropsChallenge/RenderPropChallengeApp";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -29,5 +30,9 @@ const rootElement = document.getElementById("root");
  */
 /**
  * Render RenderProps EG for toggle
+ * ReactDOM.render(<RenderPropsApp />, rootElement);
  */
-ReactDOM.render(<RenderPropsApp />, rootElement);
+/**
+ * Render RenderPropChallangeApp App.
+ */
+ReactDOM.render(<RenderPropChallangeApp />, rootElement);
