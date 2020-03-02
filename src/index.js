@@ -9,7 +9,8 @@ import ReactDOM from "react-dom";
 //import RenderPropsApp from "../src/Components/RenderPropsEg/RenderPropsApp";
 //import RenderPropChallangeApp from "../src/Components/RenderPropsChallenge/RenderPropChallengeApp";
 //import PropChallange from "../src/Components/RenderPropsChallenge/PropChallenge";
-import PerformanceApp from "../src/Components/Peformance/ClassBased-LifeCycleMethod/PerformanceApp";
+//import PerformanceApp from "../src/Components/Peformance/ClassBased-LifeCycleMethod/PerformanceApp";
+import PureComponentApp from "../src/Components/Peformance/PureComponent/PureComponentApp";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -45,5 +46,6 @@ const rootElement = document.getElementById("root");
 //--->Functional components ReactDOM.render(<PropChallange />, rootElement);
 /**
  * Rendering Perfomance optimization examples
+ * ReactDOM.render(<PerformanceApp />, rootElement);
  */
-ReactDOM.render(<PerformanceApp />, rootElement);
+ReactDOM.render(<PureComponentApp />, rootElement);
