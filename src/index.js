@@ -7,8 +7,9 @@ import ReactDOM from "react-dom";
 //import ToggleNoHocApp from "../src/Components/ToggleEg-NonHOC/ToggleNoHocApp";
 //import ToggleHOCApp from "../src/Components/ToggleEg-WithHOC/ToggleHOCApp";
 //import RenderPropsApp from "../src/Components/RenderPropsEg/RenderPropsApp";
-import RenderPropChallangeApp from "../src/Components/RenderPropsChallenge/RenderPropChallengeApp";
+//import RenderPropChallangeApp from "../src/Components/RenderPropsChallenge/RenderPropChallengeApp";
 //import PropChallange from "../src/Components/RenderPropsChallenge/PropChallenge";
+import PerformanceApp from "../src/Components/Peformance/ClassBased-LifeCycleMethod/PerformanceApp";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -35,9 +36,14 @@ const rootElement = document.getElementById("root");
  */
 /**
  * Render RenderPropChallangeApp App.
- */
-ReactDOM.render(
+ * ReactDOM.render(
   <RenderPropChallangeApp title={"RenerProps using children"} />,
   rootElement
 );
-//ReactDOM.render(<PropChallange />, rootElement);
+ */
+
+//--->Functional components ReactDOM.render(<PropChallange />, rootElement);
+/**
+ * Rendering Perfomance optimization examples
+ */
+ReactDOM.render(<PerformanceApp />, rootElement);
