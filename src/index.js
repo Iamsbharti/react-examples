@@ -13,7 +13,6 @@ import ReactDOM from "react-dom";
 //import PureComponentApp from "../src/Components/Peformance/PureComponent/PureComponentApp";
 //import ReactMemoApp from "../src/Components/Peformance/ReactMemoEg/ReactMemoApp";
 import ContextApp from "../src/Components/Context/ContextApp";
-import themeContext from "../src/Components/Context/themeContext";
 import ThemeContext from "../src/Components/Context/themeContext";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
@@ -58,7 +57,7 @@ const rootElement = document.getElementById("root");
  * Context Eg.
  */
 ReactDOM.render(
-  <ThemeContext.Provider value="light">
+  <ThemeContext.Provider value={"dark"}>
     <ContextApp />
   </ThemeContext.Provider>,
   rootElement
