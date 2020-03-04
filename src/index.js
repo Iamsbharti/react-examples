@@ -12,8 +12,10 @@ import ReactDOM from "react-dom";
 //import PerformanceApp from "../src/Components/Peformance/ClassBased-LifeCycleMethod/PerformanceApp";
 //import PureComponentApp from "../src/Components/Peformance/PureComponent/PureComponentApp";
 //import ReactMemoApp from "../src/Components/Peformance/ReactMemoEg/ReactMemoApp";
-import ContextApp from "../src/Components/Context/ContextApp";
-import ThemeContext from "../src/Components/Context/themeContext";
+//import ContextApp from "../src/Components/Context/ContextApp";
+//import ThemeContext from "../src/Components/Context/themeContext";
+import UserNameApp from "../src/Components/Context/UserNameApp";
+import UserContext from "../src/Components/Context/userContext";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -55,10 +57,17 @@ const rootElement = document.getElementById("root");
  */
 /**
  * Context Eg.
- */
-ReactDOM.render(
+ * ReactDOM.render(
   <ThemeContext.Provider value={"dark"}>
     <ContextApp />
   </ThemeContext.Provider>,
+  rootElement
+);
+ */
+
+ReactDOM.render(
+  <UserContext.Provider value={"Saurabh"}>
+    <UserNameApp />
+  </UserContext.Provider>,
   rootElement
 );
