@@ -11,7 +11,10 @@ import ReactDOM from "react-dom";
 //import PropChallange from "../src/Components/RenderPropsChallenge/PropChallenge";
 //import PerformanceApp from "../src/Components/Peformance/ClassBased-LifeCycleMethod/PerformanceApp";
 //import PureComponentApp from "../src/Components/Peformance/PureComponent/PureComponentApp";
-import ReactMemoApp from "../src/Components/Peformance/ReactMemoEg/ReactMemoApp";
+//import ReactMemoApp from "../src/Components/Peformance/ReactMemoEg/ReactMemoApp";
+import ContextApp from "../src/Components/Context/ContextApp";
+import themeContext from "../src/Components/Context/themeContext";
+import ThemeContext from "../src/Components/Context/themeContext";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -49,5 +52,14 @@ const rootElement = document.getElementById("root");
  * Rendering Perfomance optimization examples
  * ReactDOM.render(<PerformanceApp />, rootElement);
  * ReactDOM.render(<PureComponentApp />, rootElement);
+ * ReactDOM.render(<ReactMemoApp />, rootElement);
  */
-ReactDOM.render(<ReactMemoApp />, rootElement);
+/**
+ * Context Eg.
+ */
+ReactDOM.render(
+  <ThemeContext.Provider value="light">
+    <ContextApp />
+  </ThemeContext.Provider>,
+  rootElement
+);
