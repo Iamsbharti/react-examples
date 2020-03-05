@@ -16,8 +16,10 @@ import ReactDOM from "react-dom";
 //import ThemeContext from "../src/Components/Context/themeContext";
 //import UserNameApp from "../src/Components/Context/UserNameApp";
 //import UserContext from "../src/Components/Context/userContext";
-import FuContextApp from "../src/Components/FunctionalContext/FuContextApp";
-import UserContext from "../src/Components/FunctionalContext/userContext";
+//import FuContextApp from "../src/Components/FunctionalContext/FuContextApp";
+//import UserContext from "../src/Components/FunctionalContext/userContext";
+import FunThemeApp from "../src/Components/FunctionThemeContext/FunThemeApp";
+import ThemeContext from "../src/Components/FunctionThemeContext/themeContext";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -68,8 +70,8 @@ const rootElement = document.getElementById("root");
  */
 
 ReactDOM.render(
-  <UserContext.Provider value={"Saurabh"}>
-    <FuContextApp />
-  </UserContext.Provider>,
+  <ThemeContext.Provider value={"light"}>
+    <FunThemeApp />
+  </ThemeContext.Provider>,
   rootElement
 );
