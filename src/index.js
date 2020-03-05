@@ -14,8 +14,10 @@ import ReactDOM from "react-dom";
 //import ReactMemoApp from "../src/Components/Peformance/ReactMemoEg/ReactMemoApp";
 //import ContextApp from "../src/Components/Context/ContextApp";
 //import ThemeContext from "../src/Components/Context/themeContext";
-import UserNameApp from "../src/Components/Context/UserNameApp";
-import UserContext from "../src/Components/Context/userContext";
+//import UserNameApp from "../src/Components/Context/UserNameApp";
+//import UserContext from "../src/Components/Context/userContext";
+import FuContextApp from "../src/Components/FunctionalContext/FuContextApp";
+import UserContext from "../src/Components/FunctionalContext/userContext";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -67,7 +69,7 @@ const rootElement = document.getElementById("root");
 
 ReactDOM.render(
   <UserContext.Provider value={"Saurabh"}>
-    <UserNameApp />
+    <FuContextApp />
   </UserContext.Provider>,
   rootElement
 );
