@@ -18,8 +18,9 @@ import ReactDOM from "react-dom";
 //import UserContext from "../src/Components/Context/userContext";
 //import FuContextApp from "../src/Components/FunctionalContext/FuContextApp";
 //import UserContext from "../src/Components/FunctionalContext/userContext";
-import FunThemeApp from "../src/Components/FunctionThemeContext/FunThemeApp";
-import ThemeContext from "../src/Components/FunctionThemeContext/themeContext";
+//import FunThemeApp from "../src/Components/FunctionThemeContext/FunThemeApp";
+//import ThemeContext from "../src/Components/FunctionThemeContext/themeContext";
+import ToggleIndex from "../src/Components/ToggleTheme/TogggleIndex";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -66,12 +67,14 @@ const rootElement = document.getElementById("root");
     <ContextApp />
   </ThemeContext.Provider>,
   rootElement
-);
- */
 
-ReactDOM.render(
+  ---Functional Context Render
+  ReactDOM.render(
   <ThemeContext.Provider value={"light"}>
     <FunThemeApp />
   </ThemeContext.Provider>,
   rootElement
 );
+);
+ */
+ReactDOM.render(<ToggleIndex />, rootElement);
