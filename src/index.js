@@ -20,7 +20,8 @@ import ReactDOM from "react-dom";
 //import UserContext from "../src/Components/FunctionalContext/userContext";
 //import FunThemeApp from "../src/Components/FunctionThemeContext/FunThemeApp";
 //import ThemeContext from "../src/Components/FunctionThemeContext/themeContext";
-import ToggleIndex from "../src/Components/ToggleTheme/TogggleIndex";
+//import ToggleIndex from "../src/Components/ToggleTheme/TogggleIndex";
+import ChallengeIndex from "../src/Components/ContextChallenge/ChallengeIndex";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -74,7 +75,10 @@ const rootElement = document.getElementById("root");
     <FunThemeApp />
   </ThemeContext.Provider>,
   rootElement
+
+  ReactDOM.render(<ToggleIndex />, rootElement);
 );
 );
  */
-ReactDOM.render(<ToggleIndex />, rootElement);
+
+ReactDOM.render(<ChallengeIndex />, rootElement);
