@@ -4,14 +4,34 @@ import Header from "./Header";
 import "./challengeStyle.css";
 
 class ChallengeApp extends Component {
+  state = { username: "" };
+  handleChange = event => {
+    const { name, value } = event.target;
+    this.setState({ [name]: value });
+  };
+
   render() {
     return (
-      <div>
+      <main>
         <Header />
         <UserContextConsumer>
-          {({ username, _ }) => <p>No new Notifications for {username}</p>}
+          {({ username, setUserName }) => (
+            <>
+              <p>No new Notifications for {username}</p>
+              <input
+                type="text"
+                name="username"
+                value={this.state.username}
+                placeholder="New UserName"
+                onChange={this.handleChange}
+              />
+              <button onClick={() => setUserName(this.state.username)}>
+                Change UserName
+              </button>
+            </>
+          )}
         </UserContextConsumer>
-      </div>
+      </main>
     );
   }
 }

@@ -21,7 +21,9 @@ import ReactDOM from "react-dom";
 //import FunThemeApp from "../src/Components/FunctionThemeContext/FunThemeApp";
 //import ThemeContext from "../src/Components/FunctionThemeContext/themeContext";
 //import ToggleIndex from "../src/Components/ToggleTheme/TogggleIndex";
-import ChallengeIndex from "../src/Components/ContextChallenge/ChallengeIndex";
+//import ChallengeIndex from "../src/Components/ContextChallenge/ChallengeIndex";
+//import UseStateHooksApp from "../src/Components/ReactHooks/UseStateHooksApp";
+import UseEffectHooksApp from "./Components/ReactHooks/UseEffectHooksApp";
 const rootElement = document.getElementById("root");
 /*ReactDOM.render(<SetArrayEg />, rootElement);*/
 
@@ -77,8 +79,12 @@ const rootElement = document.getElementById("root");
   rootElement
 
   ReactDOM.render(<ToggleIndex />, rootElement);
+  ReactDOM.render(<ChallengeIndex />, rootElement);
 );
 );
  */
-
-ReactDOM.render(<ChallengeIndex />, rootElement);
+/**
+ * Hooks
+ * ReactDOM.render(<UseStateHooksApp />, rootElement);
+ */
+ReactDOM.render(<UseEffectHooksApp />, rootElement);
