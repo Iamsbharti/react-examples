@@ -23,19 +23,10 @@ import ReactDOM from "react-dom";
 //import ToggleIndex from "../src/Components/ToggleTheme/TogggleIndex";
 //import ChallengeIndex from "../src/Components/ContextChallenge/ChallengeIndex";
 //import UseStateHooksApp from "../src/Components/ReactHooks/UseStateHooksApp";
-import UseEffectHooksApp from "./Components/ReactHooks/UseEffectHooksApp";
+//import UseEffectHooksApp from "./Components/ReactHooks/UseEffectHooksApp";
+//import Timer from "./Components/ReactHooks/Timer";
+import ReactRefApp from "./Components/ReactRef/ReactRefApp";
 const rootElement = document.getElementById("root");
-/*ReactDOM.render(<SetArrayEg />, rootElement);*/
-
-/*Rendering the Children eg 
-  ReactDOM.render(<ChildrenApp />, rootElement);
-*/
-
-/**
- * Render High Order components Eg.
- * ReactDOM.render(<HocApp indexProps="The Answer to life is" />, rootElement);
- */
-
 /**
  * Render NONHoc Toggle Eg.
  * ReactDOM.render(<ToggleNoHocApp />, rootElement);
@@ -86,5 +77,7 @@ const rootElement = document.getElementById("root");
 /**
  * Hooks
  * ReactDOM.render(<UseStateHooksApp />, rootElement);
+ * ReactDOM.render(<UseEffectHooksApp />, rootElement);
+ * ReactDOM.render(<Timer />, rootElement);
  */
-ReactDOM.render(<UseEffectHooksApp />, rootElement);
+ReactDOM.render(<ReactRefApp />, rootElement);
