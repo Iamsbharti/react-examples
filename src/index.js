@@ -25,7 +25,8 @@ import ReactDOM from "react-dom";
 //import UseStateHooksApp from "../src/Components/ReactHooks/UseStateHooksApp";
 //import UseEffectHooksApp from "./Components/ReactHooks/UseEffectHooksApp";
 //import Timer from "./Components/ReactHooks/Timer";
-import ReactRefApp from "./Components/ReactRef/ReactRefApp";
+//import ReactRefApp from "./Components/ReactRef/ReactRefApp";
+import UseContextIndex from "./Components/UseContextHook/UseContextIndex";
 const rootElement = document.getElementById("root");
 /**
  * Render NONHoc Toggle Eg.
@@ -79,5 +80,7 @@ const rootElement = document.getElementById("root");
  * ReactDOM.render(<UseStateHooksApp />, rootElement);
  * ReactDOM.render(<UseEffectHooksApp />, rootElement);
  * ReactDOM.render(<Timer />, rootElement);
+ * ReactDOM.render(<ReactRefApp />, rootElement);
  */
-ReactDOM.render(<ReactRefApp />, rootElement);
+ReactDOM.render(<UseContextIndex />, rootElement);
+//ReactDOM.render(<ToggleIndex />, rootElement);
