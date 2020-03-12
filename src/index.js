@@ -20,13 +20,13 @@ import ReactDOM from "react-dom";
 //import UserContext from "../src/Components/FunctionalContext/userContext";
 //import FunThemeApp from "../src/Components/FunctionThemeContext/FunThemeApp";
 //import ThemeContext from "../src/Components/FunctionThemeContext/themeContext";
-//import ToggleIndex from "../src/Components/ToggleTheme/TogggleIndex";
+import ToggleIndex from "../src/Components/ToggleTheme/TogggleIndex";
 //import ChallengeIndex from "../src/Components/ContextChallenge/ChallengeIndex";
 //import UseStateHooksApp from "../src/Components/ReactHooks/UseStateHooksApp";
 //import UseEffectHooksApp from "./Components/ReactHooks/UseEffectHooksApp";
 //import Timer from "./Components/ReactHooks/Timer";
 //import ReactRefApp from "./Components/ReactRef/ReactRefApp";
-import UseContextIndex from "./Components/UseContextHook/UseContextIndex";
+//import UseContextIndex from "./Components/UseContextHook/UseContextIndex";
 const rootElement = document.getElementById("root");
 /**
  * Render NONHoc Toggle Eg.
@@ -82,5 +82,5 @@ const rootElement = document.getElementById("root");
  * ReactDOM.render(<Timer />, rootElement);
  * ReactDOM.render(<ReactRefApp />, rootElement);
  */
-ReactDOM.render(<UseContextIndex />, rootElement);
-//ReactDOM.render(<ToggleIndex />, rootElement);
+//ReactDOM.render(<UseContextIndex />, rootElement);
+ReactDOM.render(<ToggleIndex />, rootElement);
