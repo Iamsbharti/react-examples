@@ -28,7 +28,9 @@ import ReactDOM from "react-dom";
 //import ReactRefApp from "./Components/ReactRef/ReactRefApp";
 //import UseContextIndex from "./Components/UseContextHook/UseContextIndex";
 //import App from "../src/Components/CustomHooks/App";
-import CustomHooksApp from "../src/Components/CustomHooks/CustomHooksApp";
+//import CustomHooksApp from "../src/Components/CustomHooks/CustomHooksApp";
+//import RouterIndex from "../src/Components/ReactRouterEg/RouterIndex";
+import ServiceIndex from "../src/Components/ServicesApp/ServiceIndex";
 const rootElement = document.getElementById("root");
 /**
  * Render NONHoc Toggle Eg.
@@ -85,7 +87,12 @@ const rootElement = document.getElementById("root");
  * ReactDOM.render(<ReactRefApp />, rootElement);
  * ReactDOM.render(<UseContextIndex />, rootElement);
  * ReactDOM.render(<ToggleIndex />, rootElement);
-
+ * ReactDOM.render(<App />, rootElement);
+ * ReactDOM.render(<CustomHooksApp />, rootElement);
  */
-//ReactDOM.render(<App />, rootElement);
-ReactDOM.render(<CustomHooksApp />, rootElement);
+/**
+ * React Router
+ * ReactDOM.render(<RouterIndex />, rootElement);
+ */
+
+ReactDOM.render(<ServiceIndex />, rootElement);
