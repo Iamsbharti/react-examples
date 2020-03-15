@@ -30,7 +30,8 @@ import ReactDOM from "react-dom";
 //import App from "../src/Components/CustomHooks/App";
 //import CustomHooksApp from "../src/Components/CustomHooks/CustomHooksApp";
 //import RouterIndex from "../src/Components/ReactRouterEg/RouterIndex";
-import ServiceIndex from "../src/Components/ServicesApp/ServiceIndex";
+//import ServiceIndex from "../src/Components/ServicesApp/ServiceIndex";
+import ProductIndex from "../src/Components/ProductApp/ProductIndex";
 const rootElement = document.getElementById("root");
 /**
  * Render NONHoc Toggle Eg.
@@ -93,6 +94,7 @@ const rootElement = document.getElementById("root");
 /**
  * React Router
  * ReactDOM.render(<RouterIndex />, rootElement);
+ * ReactDOM.render(<ServiceIndex />, rootElement);
  */
 
-ReactDOM.render(<ServiceIndex />, rootElement);
+ReactDOM.render(<ProductIndex />, rootElement);
